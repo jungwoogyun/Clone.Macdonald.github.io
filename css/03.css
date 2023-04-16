@@ -1,0 +1,54 @@
+         /* 03 start*/
+         #wrapper>.main-contents {}
+
+         #wrapper>.main-contents>.banner-section {}
+
+         #wrapper>.main-contents>.banner-section>.swiper {
+             height: 500px;
+             /* border: 1px solid gray; */
+
+         }
+         #wrapper>.main-contents>.banner-section>.swiper>.swiper-button-prev,
+         #wrapper>.main-contents>.banner-section>.swiper>.swiper-button-next {}
+
+         #wrapper>.main-contents>.banner-section>.swiper>.swiper-wrapper {
+             position: relative;
+             z-index: -3;
+
+         }
+
+         #wrapper>.main-contents>.banner-section>.swiper>.swiper-wrapper>.swiper-slide {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             position: relative;
+         }
+
+         /* 프로그레스바  */
+         .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){
+             display:none;
+         }
+         .swiper-pagination-bullet-active{
+             width : 250px;
+             height : 5px;
+             border-radius: 15px;
+             background-color:lightgray;
+             position:relative;
+            
+         }
+         .swiper-pagination-bullet-active::before{
+             content:'';
+             width : 250px;
+             height : 5px;
+             border-radius: 15px;
+             background-color:orange;
+             position:absolute;
+             left:0px;
+             animation: progress 2s linear forwards;
+         }
+         @keyframes progress {
+         0% { width: 0; }
+         100% { width: 100%; }
+         }
+
+

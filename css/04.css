@@ -1,0 +1,19 @@
+.swiper-button-prev,
+.swiper-button-next
+{
+   width : 100px;
+   height : 100px;
+   background-color:black;
+   position:absolute;
+   top:45%;
+   opacity:0.5;
+   color : white;
+  
+}
+.swiper-button-prev
+{
+   border-radius : 0px 15px 15px 0px;
+}
+.swiper-button-next{
+   border-radius : 15px 0px 0px 15px;
+}

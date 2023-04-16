@@ -1,0 +1,111 @@
+       /* 01 Start */
+       *{
+        font-size : 1.2rem;
+        box-sizing: border-box;
+    }
+    body{ }
+    a{
+        text-decoration: none;
+        color : black;
+    }
+    #wrapper{}
+    #wrapper>header{
+        height : 150px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        /*  */
+        padding : 0 50px;
+    }
+    #wrapper>header>*{
+        margin : 0 20px;
+    }
+    #wrapper>header>.mac-logo{}
+
+    #wrapper>header>nav{
+
+    }
+    #wrapper>header>nav>.depth1{
+
+        display:flex;
+        justify-content: center;
+        
+        /* depth설정 */
+        height : 150px; 
+        line-height : 150px;
+        position:relative;
+        /* border :1px solid gray; */
+
+    }   
+    #wrapper>header>nav>.depth1>li{
+        width : 150px;
+        text-align: center;
+        
+    }
+    #wrapper>header>nav>.depth1>li>a{
+        display:block;
+    }
+
+    #wrapper>header>nav>.depth1>li>.depth2{
+        display:none;
+        
+    }
+    #wrapper>header>nav>.depth1>li>.depth2>li{
+        width : 150px;
+        height : 65px;
+        line-height : 65px;
+        text-align: center; 
+       
+    }
+    #wrapper>header>nav>.depth1>li>.depth2>li>a{
+        display:block;
+    }
+
+
+    #wrapper>header>nav>.depth1:hover .depth2{
+        
+        display:block;
+        padding : 0px;
+         
+        position:absolute;
+        z-index:10;
+        /* border : 1px solid gray; */
+       
+    }
+    /* 밑줄라인 */
+    #wrapper>header>nav>.depth1:hover:before{
+        content: "";
+        border : 0.5px solid lightgray;
+        position:absolute;
+        top:150px;
+        width : 120vw;
+        height : 1px;
+
+    }
+    /* Depth2 배경 + 바닥밑줄라인 */
+    #wrapper>header>nav>.depth1:hover:after{
+         content: "";
+         background-color : white;
+         border-bottom : 0.5px solid yellowgreen;
+         height : 300px;
+         position:fixed;
+         left:0px;
+         top:100px;
+         width : 120vw;
+         z-index:9;
+    }
+
+
+    #wrapper>header>.mac-utils{
+       
+        
+        height : 150px; 
+        line-height : 140px;
+        overflow:hidden;
+
+    }
+    #wrapper>header>.mac-utils>a{
+        margin : 0 10px;
+        font-size : 0.8rem;    
+    }
+    /* 01 End */
